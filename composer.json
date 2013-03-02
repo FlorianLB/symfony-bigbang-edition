@@ -19,7 +19,7 @@
 
         "sensiolabs/security-checker": "dev-master",
         "knplabs/rad-bundle": "2.2.*",
-        "flub/bigbang-bundle": "dev-master"
+        "flub/bigbang-bundle": "2.2.*"
     },
     "scripts": {
         "post-install-cmd": [
