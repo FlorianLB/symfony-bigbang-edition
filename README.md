@@ -8,3 +8,4 @@ This edition provides :
 * a `var` directory containing :
     * `cache` and `logs` directories
     * sessions
+* the SensioLabs security checker integrated with Composer
