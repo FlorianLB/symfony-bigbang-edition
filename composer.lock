@@ -1,5 +1,5 @@
 {
-    "hash": "88fe1b4689c74999884847dcdb860a19",
+    "hash": "bbaa6fc096be20d2b96c7b531d35c058",
     "packages": [
         {
             "name": "doctrine/common",
@@ -275,7 +275,7 @@
         },
         {
             "name": "flub/bigbang-bundle",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
             "target-dir": "flub/BigBangBundle",
             "source": {
                 "type": "git",
@@ -606,12 +606,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/alice.git",
-                "reference": "5d5f75ffdbde4bf495e2f7054daac911db837041"
+                "reference": "6bb52735f07ed7e190dd8ee0368d7111114506ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/alice/zipball/5d5f75ffdbde4bf495e2f7054daac911db837041",
-                "reference": "5d5f75ffdbde4bf495e2f7054daac911db837041",
+                "url": "https://api.github.com/repos/nelmio/alice/zipball/6bb52735f07ed7e190dd8ee0368d7111114506ec",
+                "reference": "6bb52735f07ed7e190dd8ee0368d7111114506ec",
                 "shasum": ""
             },
             "require": {
@@ -652,7 +652,7 @@
                 "orm",
                 "test"
             ],
-            "time": "2013-03-01 20:53:04"
+            "time": "2013-03-02 11:28:24"
         },
         {
             "name": "psr/log",
@@ -1304,7 +1304,6 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "sensiolabs/security-checker": 20,
-        "flub/bigbang-bundle": 20
+        "sensiolabs/security-checker": 20
     }
 }
