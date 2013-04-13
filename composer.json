@@ -1,6 +1,8 @@
 {
     "name": "flub/symfony-bigbang-edition",
     "description": "The \"Symfony BigBang Edition\" distribution",
+    "type": "project",
+    "license": "MIT",
     "autoload": {
         "psr-0": { "": "src/" }
     },
