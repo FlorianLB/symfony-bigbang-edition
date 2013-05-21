@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Symfony2 BigBang edition</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Symfony2 BigBang edition</h1>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/FlorianLB/symfony-bigbang-edition" class="button fork"><strong>View On GitHub</strong></a>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+
+        <h1 id="installation">Installation</h1>
+<p>We recommend to use <a href="http://www.getcomposer.org">Composer</a> in order to create a new project based on this edition.</p>
+<p>Use the create-project command to generate a new Symfony application:</p>
+<div class="highlight"><pre><code class="bash"><span class="nv">$ </span>php composer.phar create-project flub/symfony-bigbang-edition path/to/install 2.2.1
+</code></pre></div>
+
+<p>Composer will install Symfony and all its dependencies under the path/to/install directory.</p>
+
+
+        <h1 id="features">Features</h1>
+        <div>
+    <div>
+        <a href="" id="var-directory" name="Var directory" class="anchor"></a>
+        <h2>Var directory</h2>
+        <p>BigBang edition changes the standard way to store cache and log files. They are in the var directory, at the root of your project, and follow this architecture :</p>
+<div class="highlight"><pre><code class="php"><span class="x">+- app</span>
+<span class="x">+- src</span>
+<span class="x">+- var</span>
+<span class="x">   +- cache</span>
+<span class="x">   |  +- dev</span>
+<span class="x">   |  +- prod</span>
+<span class="x">   |  +- test</span>
+<span class="x">   +- logs</span>
+<span class="x">   +- sessions</span>
+<span class="x">+- vendor</span>
+</code></pre></div>
+        <p>You can see that the PHP sessions files are also stored in the var directory (and not in the cache directory contrary to the standard edition). That allow to keep sessions even if the cache is cleared.</p>
+    </div>
+</div>
+
+        <h2 id="knpradbundle">KnpRadBundle</h2>
+<p>This edition includes the <a href="https://github.com/KnpLabs/KnpRadBundle">KnpRadBundle</a> but it is not enabled in the <code>AppKernel</code> by default. You can use and extend classes like that but if you want use services prodvided by this bundle you have to enable it.</p>
+<p>More informations on the <a href="http://rad.knplabs.com">KnpRadBundle dedicated documentation</a>.</p>
+
+
+
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<div>
+    <div>
+        <a href="" id="var-directory" name="Var directory" class="anchor"></a>
+        <h2>Var directory</h2>
+        <p>BigBang edition changes the standard way to store cache and log files. They are in the var directory, at the root of your project, and follow this architecture :</p>
+{% highlight php %}
++- app
++- src
++- var
+   +- cache
+   |  +- dev
+   |  +- prod
+   |  +- test
+   +- logs
+   +- sessions
++- vendor
+{% endhighlight %}
+        <p>You can see that the PHP sessions files are also stored in the var directory (and not in the cache directory contrary to the standard edition). That allow to keep sessions even if the cache is cleared.</p>
+    </div>
+</div>
