@@ -9,3 +9,4 @@ bin/
 composer.phar
 app/config/parameters.yml
 app/SymfonyRequirements.php
+composer.lock
