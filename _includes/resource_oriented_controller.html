@@ -1,0 +1,17 @@
+<h2>Resource oriented controller</h2>
+
+{% highlight php %}
+<?php
+use Flub\BigBangBundle\Controller\ResourceOrientedController;
+
+class BookController extends ResourceOrientedController
+{
+    protected $baseEntity = 'FooBundle:Book';
+
+    public function foobar()
+    {
+        //Shortcut to get the repository of your base entity
+        $bookRepository = $this->getRepository();
+    }
+}
+{% endhighlight %}
