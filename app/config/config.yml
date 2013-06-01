@@ -64,3 +64,26 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
+
+# KnpRadBundle Configuration, with all services deactivated.
+# To use KnpRadBundle, uncomment the entire block and options that you want
+# ============
+# knp_rad:
+#     mailer:
+#         logger: false
+#         message_factory: false
+#     listener:
+#         view:              false
+#         resource_resolver: false
+#         orm_user:          false
+#         exception_rethrow: false
+#     security:
+#         decision_manager: false
+#     flashes:
+#         enabled: false
+#     csrf_links:
+#         enabled: false
+#     routing_loader: false
+#     form_manager:   false
+#     security_voter: false
+#     datatable:      false
