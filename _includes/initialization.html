@@ -1,0 +1,12 @@
+<h2 id="initialization">Initialization command</h2>
+<p>This edition does not provide by default different files for different external tools. But a command is available to load and have such files.</p>
+
+{% highlight bash %}
+$ php app/console bigbang:init [--behat] [--ant|--jenkins]
+{% endhighlight %}
+
+<div>For the moment only the following options are supported : </div>
+<ul>
+    <li><strong>--behat</strong> : will add a <code>behat.yml</code> in your root directory and add a features directory with a base Context class.</li>
+    <li><strong>--ant</strong> or <strong>--jenkins</strong> (alias) : will add a <code>build.xml</code> in your root directory that contains a base set of ant tasks for code quality and continous integration.</li>
+</ul>

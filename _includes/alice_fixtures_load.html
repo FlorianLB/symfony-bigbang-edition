@@ -1,0 +1,41 @@
+<h2 id="alice-fixtures-load">Command for loading alice fixtures</h2>
+{% highlight bash %}
+php app/console alice:fixtures:load dir --{append|truncate-schema|drop-schema}
+{% endhighlight %}
+
+<div>
+    Your fixtures files must be placed in your bundle in <code>Resources/fixtures/your-dir</code> :
+
+{% highlight php %}
++- FooBundle
+|  +- Resources
+|  |  +- fixtures
+|  |  |  +- prod
+|  |  |  +- test
+|  |  |  |  +- User.yml
+|  |  |  |  +- Product.yml
++- BarBundle
++- PonyBundle
+{% endhighlight %}
+</div>
+
+<div>
+If you want to load all the test fixtures of the test FooBundle (with a truncate schema strategy) :
+
+{% highlight php %}
+php app/console alice:fixtures:load test --truncate-schema --bundles=FooBundle
+{% endhighlight %}
+
+</div>
+
+<p><strong>--bundles</strong> or <strong>-b</strong> option allow filtering on bundles name. You can give a full bundle name or just a pattern.</p>
+
+<div>
+    You must choose between 3 <strong>strategy</strong> :
+
+    <ul>
+        <li>drop-schema : it will drop and create the schema before loading the fixtures</li>
+        <li>truncate-schema : it will truncate all the tables of schema before loading the fixtures (faster than drop)</li>
+        <li>append : simply add the fixtures</li>
+    </ul>
+</div>
