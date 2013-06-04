@@ -24,6 +24,9 @@
         "flub/bigbang-bundle": "2.3.*",
         "nelmio/alice": "*"
     },
+    "require-dev": {
+        "composer/composer": "1.0.0-alpha7"
+    },
     "scripts": {
         "post-install-cmd": [
             "Knp\\RadBundle\\Composer\\ScriptHandler::installParametersFile",
