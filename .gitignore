@@ -3,7 +3,8 @@ app/bootstrap.php.cache
 var/cache/*
 var/logs/*
 var/sessions/*
-build/
+build/*
+!build/config/
 vendor/
 bin/
 composer.phar
