@@ -19,6 +19,7 @@
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
 
+        "incenteev/composer-parameter-handler": "~2.0",
         "sensiolabs/security-checker": "dev-master",
         "knplabs/rad-bundle": "2.3.*",
         "flub/bigbang-bundle": "2.3.*",
@@ -29,7 +30,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "Knp\\RadBundle\\Composer\\ScriptHandler::installParametersFile",
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
@@ -37,7 +38,7 @@
             "bin/security-checker security:check"
         ],
         "post-update-cmd": [
-            "Knp\\RadBundle\\Composer\\ScriptHandler::installParametersFile",
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
@@ -52,6 +53,9 @@
     "extra": {
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",
-        "symfony-assets-install": "symlink"
+        "symfony-assets-install": "symlink",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        }
     }
 }
