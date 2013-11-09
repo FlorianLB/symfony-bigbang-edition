@@ -1,6 +1,9 @@
 Symfony2 BigBang edition
 ==========
 
+/!\ This edition is not maintened anymore. Use the [Symfony standard edition](https://github.com/symfony/symfony-standard) + [FlubBigBangBundle](https://github.com/FlorianLB/FlubBigBangBundle) instead.
+----------
+
 This edition is based on the [Symfony standard edition](https://github.com/symfony/symfony-standard) with few enhancements.
 
 What's new ?
